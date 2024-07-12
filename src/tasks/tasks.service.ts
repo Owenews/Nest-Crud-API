@@ -40,5 +40,3 @@ export class TasksService {
     return await this.taskModel.findByIdAndDelete(id);
   }
 }
-
-
