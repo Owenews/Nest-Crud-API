@@ -32,7 +32,7 @@ export class TasksController {
   }
 
   @Get(':id')
-  async getBook(
+  async getTask(
     @Param('id')
     id: string,
   ): Promise<Task> {

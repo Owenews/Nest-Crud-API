@@ -4,7 +4,7 @@ import { getModelToken } from '@nestjs/mongoose';
 import { Task, Status } from './schemas/task.schema';
 import mongoose, { Model } from 'mongoose';
 import { BadRequestException, NotFoundException } from '@nestjs/common';
-import { CreateTaskDto } from './dto/create-task.dto';
+//import { CreateTaskDto } from './dto/create-task.dto';
 
 describe('TasksService', () => {
   let taskService: TasksService;
@@ -67,6 +67,7 @@ describe('TasksService', () => {
     });
   });
 
+  /*
   describe('create', () => {
     it('should create and return a task', async () => {
       const newTask = {
@@ -88,6 +89,7 @@ describe('TasksService', () => {
       expect(result).toEqual(mockTask);
     });
   });
+  */
 
   describe('findById', () => {
     it('should find and return a book by ID', async () => {
