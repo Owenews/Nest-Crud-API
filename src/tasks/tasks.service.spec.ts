@@ -4,7 +4,7 @@ import { getModelToken } from '@nestjs/mongoose';
 import { Task, Status } from './schemas/task.schema';
 import mongoose, { Model } from 'mongoose';
 import { BadRequestException, NotFoundException } from '@nestjs/common';
-import { CreateTaskDto } from './dto/create-task.dto';
+//import { CreateTaskDto } from './dto/create-task.dto';
 
 describe('TasksService', () => {
   let taskService: TasksService;
