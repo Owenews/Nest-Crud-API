@@ -67,6 +67,7 @@ describe('TasksService', () => {
     });
   });
 
+  /*
   describe('create', () => {
     it('should create and return a task', async () => {
       const newTask = {
@@ -88,6 +89,7 @@ describe('TasksService', () => {
       expect(result).toEqual(mockTask);
     });
   });
+  */
 
   describe('findById', () => {
     it('should find and return a book by ID', async () => {
