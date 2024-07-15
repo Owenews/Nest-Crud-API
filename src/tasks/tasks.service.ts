@@ -37,9 +37,7 @@ export class TasksService {
   }
 
   async create(task: Task): Promise<Task> {
-    const data = Object.assign(task);
-
-    const res = await this.taskModel.create(data);
+    const res = await this.taskModel.create(task);
     return res;
   }
 
