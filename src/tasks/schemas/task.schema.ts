@@ -1,14 +1,14 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 
 export enum Status {
-  TODO = 'to do',
-  INPROGRESS = 'in progress',
-  DONE = 'done',
+  TODO = 'To do',
+  INPROGRESS = 'In progress',
+  DONE = 'Done',
 }
 
 @Schema()
 export class Task {
-  @Prop({ required: true })
+  @Prop()
   title: string;
 
   @Prop()
